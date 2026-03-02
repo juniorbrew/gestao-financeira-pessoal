@@ -1,0 +1,12 @@
+{
+  "name": "gestao-financeira-pessoal",
+  "version": "1.0.0",
+  "description": "Sistema SaaS de Gestão Financeira Pessoal - Multi-tenant",
+  "author": "juniorbrew",
+  "private": true,
+  "workspaces": [
+    "apps/backend",
+    "apps/frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"yarn workspace @app/backend dev\" \"yarn workspace @app/frontend dev\"",
